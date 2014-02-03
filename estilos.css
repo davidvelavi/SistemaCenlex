@@ -50,8 +50,8 @@ body{
 
 }
 header{
+	border-bottom: solid 3px;
 	overflow: hidden;
-	
 	padding: 1em 0em;
 	position: relative;
 
@@ -61,19 +61,20 @@ header figure{
 	float: right;
 	margin: 0;
 
-
 }
 #contenedor{
-	border: solid 2px;
+	
 	margin: 0;
 	padding: 0;
 	overflow: hidden;
 	width: 100%;
+
 }
 
 #contenedor #entradas{
-	width: 15%;
+	width: 28%;
 	float: right;
+	border: solid 1px;
 }
 
 #contenedor #equipos{
@@ -82,11 +83,12 @@ header figure{
   	vertical-align: top;
   	text-align: center;
   	vertical-align: top;
-	width:65%;
+  	position: relative;
+	width:60%;
 	
 }
 #contenedor #equipos .ordenadores{
-	border: solid 1px;
+	
 	display: inline-block;
 
 }
@@ -94,17 +96,34 @@ header figure{
 
 	margin: 1em;
 }
-
+#contenedor  #registrar{
+	background: black;
+	border-radius: 50px  20px ;
+	box-shadow: 6px 6px 0px red;
+	display: none;
+	margin: 2em;
+	position: absolute;
+	opacity: .8;
+	top: 15%;
+	width: 60%;
+}
+#contenedor  #registrar input{
+	margin:0.5em 0em .5em 2em;
+	border-radius: 5px;
+}
+#contenedor  #registrar input:first-child{
+	margin:2em 0em .5em 2em;
+}
 #contenedor #menu-registro{
-	
 	border: solid 3px ;
 	border-radius: 0 5px 5px 0;
 	box-shadow: 5px 5px 0px #000000;
 	display: inline-block;
 	min-height: 150px;
 	min-width: .5%;	
-	margin-top: 10%;
+	margin-top: 15%;
 	color: #00F5FF;	
+
 }
 #contenedor #menu-registro ul{
 	display: none;
