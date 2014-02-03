@@ -1,10 +1,10 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon.eot');
-	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('fonts/icomoon.woff') format('woff'),
-		url('fonts/icomoon.ttf') format('truetype'),
-		url('fonts/icomoon.svg#icomoon') format('svg');
+	src:url('fonts/icomoon.eot?hirf6t');
+	src:url('fonts/icomoon.eot?#iefixhirf6t') format('embedded-opentype'),
+		url('fonts/icomoon.woff?hirf6t') format('woff'),
+		url('fonts/icomoon.ttf?hirf6t') format('truetype'),
+		url('fonts/icomoon.svg?hirf6t#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -23,31 +23,35 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-pc:before {
+	content: "\e603";
+	font-size: 3em;
+}
 .icon-monitor:before {
 	content: "\e600";
-	font-size: 2em;
+	
 }
-.icon-user:before {
-	color: #D8D8D8;
+.icon-copy:before {
 	content: "\e601";
-	font-size: 2em;
+	
 }
-.icon-pencil:before {
+.icon-group:before {
 	content: "\e602";
-	font-size: 2em;
+	color: #D8D8D8;
+	font-size: 3em;
+	margin-right: .5em;
 }
-
-
 
 
 body{
-	background: #D8D8D8;
+	background:#CD6600;
+
 	
 
 }
 header{
 	overflow: hidden;
-	background: #680000;
+	
 	padding: 1em 0em;
 	position: relative;
 
@@ -60,46 +64,68 @@ header figure{
 
 }
 #contenedor{
-	border: solid 4px red;
-	width: 100%;
-	padding: 0;
+	border: solid 2px;
 	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
+}
 
+#contenedor #entradas{
+	width: 15%;
+	float: right;
 }
-#contenedor #contenido{
-  border: solid 3px green;
-  display: inline-block;  
-  vertical-align: top;
-  max-width:90%;
-}
-#contenedor #menu-registro{
-	background: #FBF7F3;
-	border: solid 3px green;
-	display: inline-block;
-	min-height: 60px;
-	min-width: .5%;	
+
+#contenedor #equipos{
+	display: inline-block; 
+	margin-top: 10%; 
+  	vertical-align: top;
+  	text-align: center;
+  	vertical-align: top;
+	width:65%;
 	
 }
+#contenedor #equipos .ordenadores{
+	border: solid 1px;
+	display: inline-block;
 
+}
+#contenedor #equipos .ordenadores figure{
 
+	margin: 1em;
+}
+
+#contenedor #menu-registro{
+	
+	border: solid 3px ;
+	border-radius: 0 5px 5px 0;
+	box-shadow: 5px 5px 0px #000000;
+	display: inline-block;
+	min-height: 150px;
+	min-width: .5%;	
+	margin-top: 10%;
+	color: #00F5FF;	
+}
 #contenedor #menu-registro ul{
-
 	display: none;
   	list-style: none;
-   	margin: 0;	
-  	padding: 0;  	
-
+   	padding: 0;  
 }
 
 #contenedor #menu-registro ul li{
-
-	margin: 1.5em .6em;
+	padding: 0.68em 0em; 
 	text-align: center;
 }
 #contenedor #menu-registro ul li a{
-	border-bottom: solid 3px red;
 	color: black;
-
+	padding: 1em .5em;
 	text-decoration: none;
-	
+	color: #00F5FF;
+	font-size: 2em;
+}
+#contenedor #menu-registro ul li a:active{
+	font-size: 1.7em;
+}
+#contenedor #menu-registro ul li a:hover{
+	color: black;
 }
